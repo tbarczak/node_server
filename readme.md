@@ -5,7 +5,7 @@ Full, pure NodeJS Web Server with API and MVC Web Template Support
 <!-- <a href="https://travis-ci.org/tannerlinsley/react-query" target="\_parent">
   <img alt="" src="https://travis-ci.org/tannerlinsley/react-query.svg?branch=master" />
 </a> -->
-<a href="https://npmjs.com/package/react-query" target="\_parent">
+<!-- <a href="https://npmjs.com/package/react-query" target="\_parent">
   <img alt="" src="https://img.shields.io/npm/dm/react-query.svg" />
 </a>
 <a href="https://bundlephobia.com/result?p=react-query@latest" target="\_parent">
@@ -13,9 +13,9 @@ Full, pure NodeJS Web Server with API and MVC Web Template Support
 </a>
 <a href="https://spectrum.chat/react-query">
   <img alt="Join the community on Spectrum" src="https://withspectrum.github.io/badge/badge.svg" />
-</a>
-<a href="https://github.com/tannerlinsley/react-query" target="\_parent">
-  <img alt="" src="https://img.shields.io/github/stars/tannerlinsley/react-query.svg?style=social&label=Star" />
+</a> -->
+<a href="https://github.com/tbarczak/node_server" target="\_parent">
+  <img alt="" src="https://img.shields.io/github/stars/tbarczak/node_server.svg?style=social&label=Star" />
 </a>
 
 
