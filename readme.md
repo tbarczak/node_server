@@ -1,4 +1,4 @@
-# Pure NodeJS Server Framework
+# Pure NodeJS Server Container Framework
 
 This is a work in progress, pure NodeJS Web Server with API and MVC Web Template Support.  It is not ready for use.
 
@@ -17,6 +17,7 @@ This is a work in progress, pure NodeJS Web Server with API and MVC Web Template
 - Support for MVC structured HTML Web Templates (server side)
 - Logging support
 - CLI Deployment Support (coming soon)
+- Container Support
 
 <details>
 <summary>Challenges and Solution</summary>
@@ -123,3 +124,7 @@ Document the CLI functionality around deployments and anything else
 ## HTML Templates
 
 Details around how to setup and build HTML templates (MVC format)
+
+## Container Support
+
+Details around how to script deployments of this NodeJS server instance into containers for rapid deployment and configuration coming soon.  Well after I finish building it...
