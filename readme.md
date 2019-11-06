@@ -1,6 +1,6 @@
 # Pure NodeJS Server Framework
 
-Full, pure NodeJS Web Server with API and MVC Web Template Support
+This is a work in progress, pure NodeJS Web Server with API and MVC Web Template Support.  It is not ready for use.
 
 <a href="https://github.com/tbarczak/node_server" target="\_parent">
   <img alt="" src="https://img.shields.io/github/stars/tbarczak/node_server.svg?style=social&label=Star" />
@@ -56,10 +56,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ## Installation
 
+NPM/YARN Support soon!
 ```bash
-$ npm i --save react-query
+$ npm i --save pure-node-framework
 # or
-$ yarn add react-query
+$ yarn add pure-node-framework
 ```
 
 ## Getting Started
