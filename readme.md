@@ -70,15 +70,39 @@ $ node index.js
 
 ## Default Routes
 
-Document the routes that are based in here, users, token requests, etc...
+As with any web server or Node Library such as Express, routes are necessary to define the request paths.  A few default routes are configured in the application to add support for user and token management as well as examples 
+for how to build out the app for custom requests.  All routes are configured in /lib/server.js:
+
+```js
+server.router = {
+  'ping': handlers.ping,
+  'users': handlers.users,
+  'tokens': handlers.tokens,
+  'checks': handlers.checks
+};
+```
+
+Each route function is then flushed out in the /lib/handers.js file.  For example, "handlers.ping" is defined as a function with a callback near the bottom of the file:
+
+```js
+handlers.ping = function(data,callback){
+  callback(200,{});
+};
+```
+
+This simply returns an HTTP status code of 200 and an empty data package.
 
 ### User Management
 
-Document routes associated with creating, updating and deleting users
+The Users Route supports 3 methods: POST, PUT, GET and DELETE.  Each defines a different function around user managment.  POST creates a new user record (if one isn't found), PUT updates an existing record based on their phone number (used as an easy user ID value) and GET retrieves the full user record.  DELETE obviously removes the user from the local system.
+
+In this basic implementation user data (and in fact all data) is stored locally in the file system.  That functionality is defined in the data.js helper.  But in an expanded role, that data should be stored in a database.  In a future release, an example of a SQL database implementation will be added as an option.
+
+For the basics of this application, the user data stores is first, last, phone and a password (which is encoded).
 
 ### Token Management
 
-Document routes associated with creating, updating and deleting tokens and setting their expiration values
+This app leverages basic token level authentication.  For any requests a token must be included in the header as a key / value pair of "token":"value".  The token request for a token is handled through the /tokens handler.  a POST operation including the phone number (this systems default USER ID) and correct password will generate and return a token good for 1 hour.  A PUT operation on the token, passing a valid and active token will extend the token for another 60 minutes.  A DELETE method call will remove the token assocaition with the user and deactivate it. 
 
 ### Adding Custom Routes
 
@@ -90,7 +114,7 @@ Document how logging works..
 
 ## Task Workers
 
-Document how tasks can be configured and shcheduled
+The app supports a task workers process.  All tasks designed to run on different intervals is stored in the /lib/workers.js file.  A ``` workers.init()``` function is called when the application starts and the function runs different tasks and sets the ``` workers.loop() ``` function in order to set a timer on tasks.
 
 ## CLI Functionality
 
