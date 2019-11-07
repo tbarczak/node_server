@@ -7,3 +7,5 @@ Todo:
   - COntainer Support
   - Deployment Scripts?
   - Updated Documentation
+  - Add a link to a SQL instance in Azure (and connectors)  
+    - Find the cleanest way to connect NodeJS to SQL
