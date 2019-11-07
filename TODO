@@ -1,0 +1,9 @@
+
+Todo:
+  - Add HTML Templates for basic user management
+  - Replace Checks methods with a generic task... need to brainstorm what it should do
+  - Research a CLI interface (I think there is a lesson on that)
+  - AWS Research
+  - COntainer Support
+  - Deployment Scripts?
+  - Updated Documentation
