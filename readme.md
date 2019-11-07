@@ -123,7 +123,7 @@ Document the CLI functionality around deployments and anything else
 
 ## HTML Templates
 
-Details around how to setup and build HTML templates (MVC format)
+In addition to supporting JSON based Restful API calls, custom HTML templates can be configured.  These require their own unique routes and then a mapping to a template file within the ./templates folder.  Additional functionality including an MVC framework is coming soon.
 
 ## Container Support
 
