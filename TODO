@@ -9,3 +9,7 @@ Todo:
   - Updated Documentation
   - Add a link to a SQL instance in Azure (and connectors)  
     - Find the cleanest way to connect NodeJS to SQL
+
+  - /public/app.js is the client framework.  App.js is native Javascript AJAX work, so write 2 alternative implementations of this file
+    - A jQuery Ajax implementaiton
+    - A ReactJS implementation
