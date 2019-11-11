@@ -6,7 +6,8 @@
  *  Control + C terminates app, closing port
  */
 const server = require('./lib/server')
-    , workers = require('./lib/workers');
+    , workers = require('./lib/workers')
+    , cli = require('./lib/cli');
 
 const app = {};
 
@@ -17,6 +18,12 @@ app.init = () => {
 
   //start background workers
  workers.init();
+
+ // Start the CLI, but make sure it starts last
+ setTimeout(function(){
+  cli.init();
+  },50);
+
 };
 
 //execute
