@@ -1,6 +1,6 @@
 # Pure NodeJS Server Container Framework
 
-This is a work in progress, pure NodeJS Web Server with API and MVC Web Template Support.  It is not ready for use.
+This is a work in progress, building a pure NodeJS based Web Server with API and MVC Web Template Support.  It uses no external libraries beyond the core Node functions.  It is not ready for use.
 
 <a href="https://github.com/tbarczak/node_server" target="\_parent">
   <img alt="" src="https://img.shields.io/github/stars/tbarczak/node_server.svg?style=social&label=Star" />
